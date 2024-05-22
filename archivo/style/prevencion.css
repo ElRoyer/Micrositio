@@ -1,0 +1,301 @@
+/* Estilos generales */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal */
+.wrapper {
+    display: flex;
+}
+
+
+/* Estilos del sidebar */
+.sidebar {
+    width: 280px;
+    /* Ancho del sidebar */
+    background-color: #ffffff;
+    height: 100vh;
+    /* Altura del sidebar que ocupa toda la pantalla */
+    margin-top: 40px;
+    font-size: 14px;
+    position: sticky;
+}
+
+.footer{
+    width: 280px;
+    /* Ancho del sidebar */
+    background-color: #ffffff;
+    height: 100vh;
+    /* Altura del sidebar que ocupa toda la pantalla */
+    margin-top: 40px;
+    font-size: 14px;
+    position: sticky;
+}
+
+.menu {
+    padding: 30px;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list, .material-icons,
+.material-symbols-outlined {
+    vertical-align: middle;
+    /* Alinea verticalmente el icono con el texto */
+}
+
+.menu-list li {
+    margin-bottom: 2px;
+    position: sticky;
+    margin: 8px 0;
+    padding: 0 10%;
+    transition: all 1s ease;
+    border-radius: 23px 23px 23px 23px;
+}
+
+.menu-list li:hover{
+    padding: 0 1%;
+}
+
+.menu-list li a {
+    display: flex;
+    color: #000000;
+    text-decoration: none;
+    transition: all .9s ease;
+    padding: 0 10%;
+    margin: 8px 0;
+    width: 240px;
+    height: 40px;
+    align-items: center;
+    border-radius: 23px 23px 23px 23px;
+}
+
+.menu-list li a:hover {
+    background-color: #10312b;
+    color: #ffffff;
+    padding: 0 1%;
+}
+
+/* Estilos del submenú */
+.submenu {
+    display: none;
+    /* Ocultar submenú por defecto */
+    background-color: #ffffff;
+    /* Color de fondo del submenú */
+}
+
+.has-submenu:hover .submenu {
+    display: block;
+    /* Mostrar submenú al pasar el cursor sobre el elemento padre */
+}
+
+.submenu li {
+    margin-left: -20px;
+    /* Espacio para indicar el subnivel */
+    padding-left: 25px;
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: justify;
+    display: block;
+}
+
+.submenu li:hover {
+    color: white;
+    border-radius: 25px 23px 23px 23px;
+    text-decoration: none;
+}
+
+.submenu li:active{
+    text-decoration: none;
+    color: #B38E5D;
+    font-weight: bold;
+    background: #10312b;
+    border-radius:  solid 10px;
+    transition: all 1s ease;
+    -webkit-border-radius: 23px 23px 23px 23px;
+}
+
+.menu-list li a.active {
+    background-color: #10312B;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: all 1s ease;
+    border-radius: 23px 23px 23px 23px;
+}
+
+.menu-text {
+    margin-left: 15px;
+    font-size: 1.9rem;
+    /* Puedes ajustar el valor según el espacio que desees */
+}
+
+.color{
+    color: #B38E5D;
+}
+
+.content{
+    margin-top: 80px;
+    margin-left: 160px;
+}
+
+
+.titulo2{
+    font-size: 30px; 
+}
+.titulo_3{
+    font-size: 30px;
+}
+
+.sub_1{
+    font-weight: lighter; 
+    text-align: justify;
+    font-size: larger; 
+    margin-top: -1rem;
+    color: rgba(77, 76, 76, 0.815);
+} 
+p{
+    text-align: justify;
+}
+
+img{
+    width: 520px;
+    height: 280px;
+    border-radius: 20px;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+    grid-gap: 20px; /* Espacio entre las imágenes */
+    margin: 10px 30px 50px; 
+  }
+
+.card {
+    width: 520px;
+    height: 280px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.212);
+    background: #fff;
+    display: flex;
+    border-radius: 20px;
+    justify-content: center;
+    transition: all .4s;
+    margin-top:30px;
+   }
+   
+   .card::before{
+    content: attr(data-custom-text);
+    letter-spacing: 0em;
+    position: absolute;
+    bottom: -1px;
+    color: rgb(51, 51, 51);
+    font-size: 2.2rem;
+    font-weight: bold;
+   }
+
+   .card div {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.212);
+    cursor: pointer;
+    z-index: 10;
+    transition: all .4s;
+    background-color: #fff;
+   }
+   
+   .card:hover div {
+    transform: translateY(-35px);
+   }
+
+   .sub_tarjeta{
+    display: none;
+   }
+
+.sub_subtema{
+    margin-top: 4rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.lista li{
+    font-size:  1.9rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.imagen_deteccion2{
+    max-width:  auto; 
+    max-width: auto; 
+    margin-bottom: 50px;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav ul li {
+    position: relative;
+  }
+  
+  nav ul li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 15px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+  }
+  
+  nav ul li a:hover {
+    background-color: #240707;
+  }
+  
+  /* Submenú */
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    min-width: 100%;
+    background-color: #10312B;
+    box-shadow: 20px 1px 6px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    border-radius: 10px;
+  }
+  
+  .submenu li a {
+    padding: 10px 20px;
+    white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+    margin: 0;
+  }
+  
+  .submenu li a:hover {
+    background-color: #B38E5D;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Mostrar el submenú al pasar el mouse */
+  .dropdown:hover .submenu {
+    display: block;
+  }
+  
+  .active{
+    background-color: #B38E5D;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+  }
+

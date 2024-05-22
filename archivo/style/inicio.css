@@ -1,0 +1,131 @@
+.container{
+    margin-left: 200px;
+}
+
+.time{
+    margin-top: -60px;
+}
+.portada{
+    margin-left: 20px;
+    width: 67%;
+    border-radius: 50px;
+}
+.titulo{
+    font-size: 25px;
+    margin-bottom: 2px;
+    margin-top: 20px;
+}
+.titulo1{
+    margin-top: -25px;
+    font-size: 35px; 
+}
+.texto1{
+    text-align:justify;
+    margin-top: 110px;
+}
+.titulo2{
+    font-size: 30px; 
+}
+.titulo_3{
+    font-size: 30px;
+}
+.explain{
+    margin-top: -30px;
+}
+.red{
+    width: 92%;
+}
+.img2{
+    margin-top: 40px;
+    margin-left: 80px;
+}
+.row{
+    margin-top: 20px;
+}
+.text3{
+    margin-left: 220px;
+}
+.pasos_seguir{
+    margin-left:80px;
+    margin-top: -50px
+}
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+    scroll-snap-align: start;
+}
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    
+}
+::-webkit-scrollbar {
+    display: none;
+}
+._container{
+    margin-top: 60px;
+    margin-left: -120px;
+}
+.slider{
+    width: 550px;
+	margin: auto;
+	overflow: hidden;
+}.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 13s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+.contenedor_2{
+    justify-content: center;
+    margin-top: -60px;
+    width: 360px;
+}
+button{
+    margin-top: 18px;
+    font-size: 20px;
+    height: 60px;
+    width: 100%;
+    font-weight: 500;
+    background: rgba(0,0,0,0);
+    border: 3px solid;
+    border-color: #10312B;
+    transition: all 1s ease;
+    border-radius: 23px 23px 23px 23px;
+    -moz-border-radius: 23px 23px 23px 23px;
+    -webkit-border-radius: 23px 23px 23px 23px;
+} 
+button:hover{
+    background: #10312B;
+    color: #fff !important;
+    -webkit-box-shadow: 0px 10px 35px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 35px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 35px 1px rgba(0,0,0,0.75);
+}

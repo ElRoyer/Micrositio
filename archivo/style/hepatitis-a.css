@@ -1,0 +1,43 @@
+.sub_1{
+font-weight: lighter; 
+text-align: justify;
+font-size: larger; 
+margin-top: 2rem;
+color: rgba(77, 76, 76, 0.815);
+}    
+
+p{
+    text-align: justify;
+}
+.sub_2{
+font-size: 1.2rem;
+margin-top: 2rem;
+}
+.sub_3{
+font-size: 20px;
+margin-bottom: 2.5rem;
+}
+.sub_4{
+font-size: 20px;
+margin-bottom: 2.5rem;
+}
+
+.sub_5{
+font-size: 20px;
+margin-bottom: 2.5rem;
+}
+.lista{
+padding: 3.4rem;
+margin-bottom: 2.5rem;
+}
+
+li{
+font-size:  1.9rem;
+margin-top: 20px;
+margin-bottom: 20px;
+text-align: justify;
+}
+
+.contacto{
+margin-top: 2px;
+}

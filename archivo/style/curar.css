@@ -1,0 +1,248 @@
+ /* Estilos generales */
+ body,
+ html {
+     margin: 0;
+     padding: 0;
+     font-family: Arial, sans-serif;
+ }
+ .content{
+   margin-top: 80px;
+   margin-left: 160px;
+ }
+ /* Contenedor principal */
+ .wrapper {
+     display: flex;
+ }
+
+
+ .menu {
+     padding: 30px;
+ }
+ 
+ .menu-list {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+ }
+ 
+ .menu-list .material-icons,
+ .material-symbols-outlined {
+     vertical-align: middle;
+     /* Alinea verticalmente el icono con el texto */
+ }
+ 
+ .menu-list li {
+     margin-bottom: 2px;
+     position: sticky;
+     margin: 8px 0;
+     padding: 0 10%;
+     transition: all 1s ease;
+     border-radius: 23px 23px 23px 23px;
+ }
+ 
+ .menu-list li:hover{
+     padding: 0 1%;
+ }
+ 
+ .menu-list li a {
+     display: flex;
+     color: #000000;
+     text-decoration: none;
+     transition: all .9s ease;
+     padding: 0 10%;
+     margin: 8px 0;
+     width: 240px;
+     height: 40px;
+     align-items: center;
+     border-radius: 23px 23px 23px 23px;
+ }
+ 
+ .menu-list li a:hover {
+     background-color: #10312b;
+     color: #ffffff;
+     padding: 0 1%;
+ }
+ 
+ /* Estilos del submenú */
+ .submenu {
+     display: none;
+     /* Ocultar submenú por defecto */
+     background-color: #ffffff;
+     /* Color de fondo del submenú */
+ }
+ 
+ .has-submenu:hover .submenu {
+     display: block;
+     /* Mostrar submenú al pasar el cursor sobre el elemento padre */
+ }
+ 
+ .submenu li {
+     margin-left: -20px;
+     /* Espacio para indicar el subnivel */
+     padding-left: 25px;
+     color: black;
+     text-decoration: none;
+     font-size: 14px;
+     text-align: justify;
+     display: block;
+ }
+ 
+ .submenu li:hover {
+     color: white;
+     border-radius: 25px 23px 23px 23px;
+     text-decoration: none;
+ }
+ 
+ .submenu li:active{
+     text-decoration: none;
+     color: #B38E5D;
+     font-weight: bold;
+     background: #10312b;
+     border-radius:  solid 10px;
+     transition: all 1s ease;
+     -webkit-border-radius: 23px 23px 23px 23px;
+ }
+ 
+ .menu-list li a.active {
+     background-color: #10312B;
+     color: #fff;
+     border-radius: 20px;
+     text-decoration: none;
+     color: #ffffff;
+     font-weight: bold;
+     transition: all 1s ease;
+     border-radius: 23px 23px 23px 23px;
+ }
+ 
+ .menu-text {
+     margin-left: 15px;
+     font-size: 1.9rem;
+     /* Puedes ajustar el valor según el espacio que desees */
+ }
+ 
+ .color{
+     color: #B38E5D;
+ }
+ 
+ .content{
+     margin-top: 80px;
+     margin-left: 160px;
+ }
+ 
+ 
+.sub_1{
+   font-weight: lighter; 
+   text-align: justify;
+   font-size: 24px; 
+   margin-top: 5rem;
+   color: rgba(77, 76, 76, 0.815);
+}    
+
+
+p{
+   text-align: justify;
+}
+
+
+.sub_2{
+   font-size: 1.2rem;
+   margin-top: 2rem;
+}
+.sub_3{
+   font-size: 25px;
+   margin-top: 3rem;
+   margin-bottom: 2.5rem;
+}
+.sub_4{
+   font-size: 25px;
+   margin-top: 25px;
+   margin-bottom: 2.5rem;
+   font-weight: bold;
+}
+
+.sub_5{
+   font-size: 17px;
+   margin-bottom: 2.5rem;
+}
+.lista{
+   padding: 3.4rem;
+   margin-bottom: 2.5rem;
+   font-size: 17px;
+   text-align: justify;
+}
+
+.lista li{
+   margin-bottom: 20px;
+}
+
+.row{
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+
+.li{
+    font-size:  1.9rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+    }   
+
+    
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+
+  nav ul li {
+    position: relative;
+  }
+
+  nav ul li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 15px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+  }
+
+  nav ul li a:hover {
+    background-color: #240707;
+  }
+
+  /* Submenú */
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    min-width: 100%;
+    background-color: #10312B;
+    box-shadow: 20px 1px 6px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    border-radius: 10px;
+  }
+
+  .submenu li a {
+    padding: 10px 20px;
+    white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+    margin: 0;
+  }
+
+  .submenu li a:hover {
+    background-color: #B38E5D;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* Mostrar el submenú al pasar el mouse */
+  .dropdown:hover .submenu {
+    display: block;
+  }
+
+  .active{
+    background-color: #B38E5D;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+  }
